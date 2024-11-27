@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PigeonClicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>PigeonClicker</h1>
+    <p class="story">Cliquez sur le pigeon pour recruter votre armée et conquérir le monde !</p>
+    <div class="game">
+        <img id="pigeon" src="Pigeons.png" alt="Pigeon" onclick="clickPigeon()">
+        <p class="count">Pigeons : <span id="pigeonCount">0</span></p>
+    </div>
+    <div class="upgrades">
+        <h2>Améliorations</h2>
+        <button id="upgrade1" onclick="buyUpgrade(1)">Pain Enchanté (Coût : <span id="cost1">10</span>)</button>
+        <button id="upgrade2" onclick="buyUpgrade(2)">Entraînement au vol (Coût : <span id="cost2">50</span>)</button>
+    </div>
+    <div class="goals">
+        <h2>Objectifs</h2>
+        <p id="goal">Conquête de la Rue : Atteignez 10 pigeons pour progresser.</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
